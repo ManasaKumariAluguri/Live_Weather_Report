@@ -198,6 +198,17 @@ backdrop-filter: blur(15px);
     margin:auto;
     gap:15px;
  }
+     /* Prevent weekday/label wrapping in forecast rows on small screens */
+ .nextFiveDaysDiv .forecastRow h5{
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     max-width: 38%;
+     font-size: 0.9rem;
+ }
+ .nextFiveDaysDiv .forecastRow .d-flex.align-items-center.justify-content-center{
+     flex: 0 0 40%;
+ }
  /* Ensure four metric boxes fit on small screens and container can expand */
  .rowOne .extraMetric{
      /* make two items per row on small screens */
