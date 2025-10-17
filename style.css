@@ -135,8 +135,24 @@ width:100%;
 }
 
 @media only screen and (max-width:767px){
- body{
-    background-image:url('images/mobilebg5.jpg');
+  body{
+     /* Use a fixed pseudo-element for the mobile background to avoid zoom/scroll artifacts */
+     background-image: none;
+ }
+ /* Fixed background fallback: a full-screen fixed pseudo-element that sits behind content */
+ body::before{
+     content: '';
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-image: url('images/mobilebg5.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     z-index: -1;
+     pointer-events: none;
  }
 .leftDiv{
     width:100%;
@@ -201,6 +217,7 @@ backdrop-filter: blur(15px);
      /* Prevent weekday/label wrapping in forecast rows on small screens */
  .nextFiveDaysDiv .forecastRow h5{
      white-space: nowrap;
+     margin-left:
      overflow: hidden;
      text-overflow: ellipsis;
      max-width: 38%;
