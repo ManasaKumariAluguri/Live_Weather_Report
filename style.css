@@ -1,0 +1,202 @@
+body{
+    background: url('images/backgroundPic_pc.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-family:"comfortaa",sans-serif;
+    color:white;
+}
+.searchBar{
+    height:10vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchBarParentDiv{
+    width:50%;
+    height:fit-content;
+    position: relative;
+    border-radius: 40px;
+    outline: none;
+}
+.searchBarParentDiv:hover{
+    border:none;
+    font-size: larger;
+}
+.inputfield{
+    width:100%;
+    border-radius: 25px;
+    padding: 10px;
+    border:none;
+    outline: none;
+    font-size: 1.5rem;
+}
+#searchIcon{
+    position:absolute;
+    right:10px;
+    font-size: 30px;
+    color:black;
+    margin-top: 10px;
+    
+}
+#searchIcon:hover{
+    cursor: pointer;
+}
+.mainContentParentDiv{
+    height: 90vh;
+    flex-direction: row;
+}
+.leftDiv{
+    width:30%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+.leftChild{
+    background: rgba(212,212,212,0.4);
+    width:85%;
+    height:35vh;
+    margin:auto;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+}
+#calender{
+    font-size: 25px;
+}
+#clock{
+    font-size: 25px;
+}
+.currentTempDiv h6{
+    font-size:larger;
+}
+#cityName{
+    font-size: xx-large;
+}
+#cityTemp{
+    font-size: x-large;
+}
+#skyDes{
+    font-size: x-large;
+}
+#comingFiveDays{
+    font-size: x-large;
+}
+.fontOfTemp{
+    font-size: 1.5rem;
+}
+ .rightDiv{
+    width:68%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.rightRow{
+height:27vh;
+width:100%;
+ 
+}
+.extraMetric{
+    background: rgba(212,212,212,0.4);
+    padding:5% 2%;
+    width:fit-content;
+    border-radius: 15px;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+.rowTwoDiv{
+    background: rgba(212,212,212,0.4);
+    backdrop-filter: blur(15px);
+    padding:5% 2%;
+    width:45%;
+    height:80%;
+    border-radius: 15px;
+} 
+.todayTemp{
+    background: rgba(212,212,212,0.4);
+    backdrop-filter: blur(15px);
+    width:fit-content;
+    padding:15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+@media only screen and (max-width:767px){
+ body{
+    background-image:url('images/mobilebg5.jpg');
+ }
+.leftDiv{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin-top: 15px;
+    }
+.rightDiv{
+    width:100%;
+}
+.mainContentParentDiv{
+    height: 90vh;
+    flex-direction: column;
+}
+.searchBar{
+    width:100%;
+}
+.searchBarParentDiv{
+    width:85%;
+    height:fit-content;
+    position: relative;
+    border-radius: 30px;
+}
+.nextFiveDaysDiv{
+backdrop-filter: blur(15px);
+    margin-bottom: 20px;
+}
+.rowOne{
+    flex-wrap: wrap;
+    width:85%;
+    margin: auto;
+}
+.rowTwo{
+    flex-direction: column;
+    gap:10px;
+    height:30vh;
+}
+.rowTwoDiv{
+    background: rgba(212,212,212,0.4);
+    backdrop-filter: blur(15px);
+    padding:5% 2%;
+    width:85%;
+    height:80%;
+    border-radius: 15px;
+} 
+ .todayTempParentDiv{
+    width:100%;
+    flex-wrap: wrap;
+    margin:auto;
+    gap:15px;
+ }
+ /* Ensure four metric boxes fit on small screens and container can expand */
+ .rowOne .extraMetric{
+     /* make two items per row on small screens */
+     flex: 0 0 48%;
+     max-width: 48%;
+     padding: 8px 6px;
+     box-sizing: border-box;
+     margin-bottom: 10px;
+ }
+ .rightRow{
+     height: auto;
+ } 
+ .rowThree{
+    width:85%;
+    margin:auto;
+    margin-bottom: 20px;
+ }
+}
