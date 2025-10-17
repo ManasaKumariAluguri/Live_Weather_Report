@@ -207,6 +207,9 @@ backdrop-filter: blur(15px);
      box-sizing: border-box;
      margin-bottom: 10px;
  }
+    .rowOne{
+    margin-top: 25px;
+ }
  .rightRow{
      height: auto;
  } 
