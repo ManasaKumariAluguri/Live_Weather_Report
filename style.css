@@ -61,6 +61,14 @@ body{
     border-radius: 10px;
     backdrop-filter: blur(15px);
 }
+.leftChildtwo{
+     background: rgba(212,212,212,0.4);
+    width:85%;
+    height:40vh;
+    margin:auto;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+}
 #calender{
     font-size: 25px;
 }
@@ -156,7 +164,15 @@ width:100%;
 }
 .nextFiveDaysDiv{
 backdrop-filter: blur(15px);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+    .leftChildtwo{
+     background: rgba(212,212,212,0.4);
+    width:85%;
+    height:42vh;
+    margin:auto;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
 }
 .rowOne{
     flex-wrap: wrap;
